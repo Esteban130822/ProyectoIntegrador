@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ui.RegisterController" stylesheets="@/css/styles.css">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+    <Label text="Registro de Usuario" styleClass="title"/>
+    <Label text="Nombre"/>
+    <TextField fx:id="txtNombre" promptText="Nombre completo"/>
+    <Label text="Correo"/>
+    <TextField fx:id="txtCorreo" promptText="correo@colegio.edu"/>
+    <Label text="Contraseña"/>
+    <PasswordField fx:id="txtPassword" promptText="••••••••"/>
+    <Label text="Rol"/>
+    <ComboBox fx:id="cmbRol"/>
+    <Label fx:id="lblInfo" styleClass="info"/>
+    <HBox spacing="10">
+        <Button text="Crear cuenta" onAction="#onRegister"/>
+        <Button text="Volver al Login" onAction="#onBackToLogin"/>
+    </HBox>
+</VBox>

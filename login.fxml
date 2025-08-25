@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ui.LoginController" stylesheets="@/css/styles.css">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+    <Label text="Iniciar Sesión" styleClass="title"/>
+    <Label text="Correo"/>
+    <TextField fx:id="txtCorreo" promptText="correo@colegio.edu"/>
+    <Label text="Contraseña"/>
+    <PasswordField fx:id="txtPassword" promptText="••••••••"/>
+    <Label fx:id="lblError" styleClass="error"/>
+    <HBox spacing="10">
+        <Button text="Ingresar" onAction="#onLogin"/>
+        <Button text="Registrarse" onAction="#onGoToRegister"/>
+    </HBox>
+</VBox>
